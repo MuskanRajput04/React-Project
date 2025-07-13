@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useTheme } from './Theme';
 import './FormValidation.css';
 function FormValidation() {
   const [name, setName] = useState("");
@@ -13,7 +12,7 @@ function FormValidation() {
   const phonePattern = /^[6-9]\d{9}$/;
   const namePattern = /^[A-Za-z]{3,}$/;
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const {theme,toggleTheme}=useTheme();
+  console.log("FormValidation component loaded")
   const validateName = (input) => {
     if (!input) return "Name Filed is Empty"
     return namePattern.test(input) ? "" : "Invalid Name Format"
@@ -95,10 +94,6 @@ function FormValidation() {
   return (
    <form onSubmit={handleSubmit} className="form">
   <h2>User Registration
- 
-  <label className='switch'>
-  <input type="checkbox"onChange={toggleTheme} />
-  </label>
   </h2>
 
   <div className="input-group">

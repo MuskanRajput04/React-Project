@@ -1,12 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import FormValidation from './component/FormValidation'
-
+import { useTheme } from '../src/component/Theme.jsx'
+import RouterReact from './component/RouterReact.jsx'
 function App() {
-  const [count, setCount] = useState(0)
-
+  const { toggleTheme } = useTheme();
   return (
-    <FormValidation />
+   <>
+      <label className="switch">
+        <input type="checkbox" onChange={toggleTheme} />
+      </label>
+
+      <RouterReact />
+    </>
+      
   )
 }
 

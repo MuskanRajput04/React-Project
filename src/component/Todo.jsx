@@ -46,7 +46,7 @@ function Todo() {
 
   return (
     <div className="todo">
-      <h1>Item List</h1>
+      <h1>Student Name List</h1>
       <div className="input-container">
         <input
           type="text"
