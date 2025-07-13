@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './Menu.css';
+import './menu.css';
 function Menu() {
     const { REstroID } = useParams();
     const [menu, setMenu] = useState([]);
