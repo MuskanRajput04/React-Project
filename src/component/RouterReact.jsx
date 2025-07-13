@@ -16,6 +16,7 @@ function RouterReact() {
         <Route path="/" element={<FormValidation />} />
          <Route path="/todo" element={<Todo />} />
          <Route path="/locationApi" element={<LocationApi />} />
+         
        <Route path="/food" element={<Food />} />
 <Route path="/food/menu/:REstroID" element={<Menu />} />
       </Routes>
