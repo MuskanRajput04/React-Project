@@ -1,0 +1,37 @@
+.faq-container {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.faq-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.faq-list h2{
+    text-align: center;
+}
+.faq-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.faq-list .faq-item .ques{
+    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #ecacac;
+    border-radius: 5px;
+}
+.faq-list .faq-item .ans{
+    display: none;
+    margin-top: 1rem;
+      transition: all 0.3s ease;
+}
+.faq-list .faq-item .ans.open{
+    display: flex;
+}

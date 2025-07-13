@@ -1,0 +1,20 @@
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+   margin: 0 1rem 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-item:nth-of-type(4n) {
+    margin-right: 0;
+}
+.menu-item:last-child {
+    margin-right: 0 !important;
+}
